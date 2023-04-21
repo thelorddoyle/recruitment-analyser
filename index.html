@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Quality Assessment</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      textarea {
+        resize: vertical;
+        min-height: 200px;
+      }
+      button {
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 200px;
+        align-self: center;
+      }
+      #result {
+        margin-top: 2rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Code Quality Assessment</h1>
+    <form id="codeForm">
+      <label for="codeInput">Paste your code here:</label>
+      <textarea id="codeInput"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="result"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
